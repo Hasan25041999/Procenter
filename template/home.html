@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/e6cc4d3f84.js" crossorigin="anonymous"></script>
+    {% load static %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+
+</head>
+
+<body>
+    <header class="w-100 p-1 ">
+        <h1 class="container text-white w-100 mt-2">The Command Center</h1>
+
+    </header>
+    <input type="search" class="mt-2 w-25 ms-5" placeholder="Search" style="border-radius: 10px; height:40px; outline:none" >
+    <button class="">Search</button>
+    <nav class="p-3 w-  float-end">
+         <a href="" class="text-black mx-2">Home</a>
+        <a href="" class="text-black mx-2">The Heart of WBC</a>
+        <a href="" class="text-black mx-2">Send Us Your Thoughts</a>
+        <a href="signup" class="text-black mx-2">Login</a>
+        <a href="" class="text-black mx-2">Admin</a>
+    
+    </nav>
+    <div class="border border-info w-100">
+        <img src="/static/image/img1.jpg" alt="" class="w-100">
+        
+    </div>
+    <footer class="w-100  p-3" >
+        &copy; Aptech Learning
+        <p class="float-end">
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"><i class="fa-brands fa-facebook-f ms-3 fs-4 text-white"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram ms-3 fs-4 text-white" ></i></a>
+            <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter ms-3 fs-4 text-white" ></i></a>
+    </footer>
+   <script src="{% static 'home.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.container {
+    text-align: center;
+    font-family: 'new1';
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'new1';
+    src: url('/static/font/avarezo_serif/AvarezoSerif_PERSONAL_USE_ONLY.otf');
+}
+
+header {
+    background-color: #183B4E;
+    
+}
+
+
+.ms-5 {
+    margin-left: 150px !important;
+
+    font-size: 15px !important;
+}
+
+.border {
+    height: 450px !important;
+    display: flex;
+}
+
+img {
+    height: 450px;
+}
+
+footer{
+    background-color: #183B4E;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+   
+}
+.float-end{
+    margin-right: 40px !important;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    
+}
+a:hover{
+    color: brown !important;
+}
+button{
+    border-radius: 10px !important;
+    height: 40px;
+}

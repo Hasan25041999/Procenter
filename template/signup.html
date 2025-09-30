@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Login</title>
+    {% load static %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    <style>
+        .mt-5{
+            
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+ <div class="w-75 container mt-5">
+    <button class="btn btn-primary w-50" id="signup">Signup</button>
+    <button class="btn btn-primary w-50 ms-4">Login</button>
+ </div>
+ 
+ <div class="w-75 container mt-4 d-none" id="shide">
+    <form method="post" class="w-50 container">
+        {% csrf_token %}
+        {{data.as_p}}
+        <button class="btn btn-primary w-100 container" id="next">Next</button>
+    </form>
+ </div>
+
+ <div class="w-75 container mt-4 d-none" id="lhide">
+    <form method="post" class="w-50 container">
+        {% csrf_token %}
+        {{pro.as_p}}
+        <button class="btn btn-primary w-100 container" id="sub">Submit</button>
+    </form>
+ </div>
+    <script src="{% static 'signup.js' %}"></script>
+
+</body>
+</html>
