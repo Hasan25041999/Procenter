@@ -1,13 +1,27 @@
 {
-    "builds":[{
-        "src":"procenter/wsgi.py",
-        "use":"@vercel/python",
-        "config":{"maxLambdaSize":"15mb","runtime":"python3.13"}
-    }],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"procenter/wsgi.py"
+    "version": 2,
+    "builds": [
+      {
+        "src": "procenter/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "15mb",
+          "runtime": "python3.13"
         }
-    ]
+      },
+      {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "static"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "procenter/wsgi.py"
+      }
+    ],
+    "outputDirectory": "static"
 }
